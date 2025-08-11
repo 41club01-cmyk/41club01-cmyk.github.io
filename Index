@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>श्री सुखराम सिंह यादव पब्लिक स्कूल कुंवर गांव बदायूं</title>
+<style>
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body {
+    background: #f4f7f8;
+    color: #222;
+  }
+  a {
+    color: #0d6efd;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  header {
+    background: #0d6efd;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+  nav {
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  nav a {
+    margin: 0 15px;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+  }
+  nav a:hover,
+  nav a.active {
+    background: #0d6efd;
+    color: white;
+  }
+  .container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+  section {
+    margin-bottom: 60px;
+  }
+  section h2 {
+    font-size: 2.2rem;
+    color: #0d6efd;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  #home p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+    line-height: 1.6;
+    text-align: center;
+    color: #444;
+  }
+  #about p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  #teachers .teacher-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+  }
+  .teacher {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgb(13 110 253 / 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .teacher:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgb(13 110 253 / 0.25);
+  }
+  .teacher img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #0d6efd;
+  }
+  .teacher h3 {
+    color: #0d6efd;
+    margin-bottom: 8px;
+  }
+  .teacher p {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  #admission form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px 35px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgb(13 110 253 / 0.1);
+  }
+  #admission form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #0d6efd;
+  }
+  #admission form input,
+  #admission form select,
+  #admission form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 20px;
+    border: 1.8px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  #admission form input:focus,
+  #admission form select:focus,
+  #admission form textarea:focus {
+    border-color: #0d6efd;
+    outline: none;
+  }
+  #admission form button {
+    background: #0d6efd;
+    color: white;
+    font-size: 1.1rem;
+    padding: 14px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background 0.3s ease;
+  }
+  #admission form button:hover {
+    background: #0849b0;
+  }
+  #contact p {
+    max-width: 600px;
+    margin: 8px auto;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #444;
+  }
+  #contact strong {
+    color: #0d6efd;
+  }
+  footer {
+    background: #0d6efd;
+    color: white;
+    text-align: center;
+    padding: 18px 10px;
+    font-size: 0.9rem;
+    letter-spacing: 1.1px;
+  }
+  @media(max-width: 768px){
+    nav {
+      flex-wrap: wrap;
+    }
+    nav a {
+      margin: 8px 10px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>श्री सुखराम सिंह यादव पब्लिक स्कूल कुंवर गांव बदायूं</h1>
+</header>
+
+<nav>
+  <a href="#home" class="active">होम</a>
+  <a href="#about">हमारे बारे में</a>
+  <a href="#teachers">टीचर्स</a>
+  <a href="#admission">एडमिशन</a>
+  <a href="#contact">संपर्क करें</a>
+</nav>
+
+<main class="container">
+  <section id="home">
+    <h2>स्वागत है!</h2>
+    <p>हमारा स्कूल आपके बच्चे को बेहतरीन शिक्षा, संस्कार और खेलकूद के अवसर प्रदान करता है। हम हर छात्र के उज्जवल भविष्य के लिए प्रतिबद्ध हैं।</p>
+  </section>
+
+  <section id="about">
+    <h2>हमारे बारे में</h2>
+    <p>श्री सुखराम सिंह यादव पब्लिक स्कूल कुंवर गांव बदायूं 1990 में स्थापित हुआ। हमारा उद्देश्य बच्चों को गुणवत्ता शिक्षा देना और उनका सर्वांगीण विकास करना है। अनुभवी शिक्षक और आधुनिक शिक्षण तकनीक के साथ हम बच्चों का भविष्य संवारते हैं।</p>
+  </section>
+
+  <section id="teachers">
+    <h2>टीचर्स</h2>
+    <div class="teacher-list">
+      <div class="teacher">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="अरविंद यादव" />
+        <h3>अरविंद यादव</h3>
+        <p>प्रधान शिक्षक</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="admission">
+    <h2>एडमिशन फॉर्म</h2>
+    <form action="https://formsubmit.co/vipinallfact@gmail.com" method="POST">
+      <!-- Redirect to thank you page after submit (optional) -->
+      <input type="hidden" name="_next" value="https://formsubmit.co/thankyou.html" />
+      <!-- Disable CAPTCHA -->
+      <input type="hidden" name="_captcha" value="false" />
+
+      <label for="name">पूरा नाम</label>
+      <input type="text" id="name" name="नाम" placeholder="आपका नाम लिखें" required />
+
+      <label for="age">आयु</label>
+      <input type="number" id="age" name="आयु" placeholder="आपकी आयु" required min="3" max="18" />
+
+      <label for="class">कक्षा</label>
+      <select id="class" name="कक्षा" required>
+        <option value="">--कक्षा चुनें--</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+      </select>
+
+      <label for="message">अतिरिक्त जानकारी (यदि कोई हो)</label>
+      <textarea id="message" name="अतिरिक्त_जानकारी" rows="4" placeholder="यहाँ लिखें"></textarea>
+
+      <button type="submit">सबमिट करें</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>संपर्क करें</h2>
+    <p><strong>फोन:</strong> 7037213055</p>
+    <p><strong>ईमेल:</strong> vipinallfact@gmail.com</p>
+    <p><strong>पता:</strong> कुंवर गांव, बदायूं, उत्तर प्रदेश, भारत</p>
+  </section>
+</main>
+
+<footer>
+  © 2025 श्री सुखराम सिंह यादव पब्लिक स्कूल कुंवर गांव बदायूं | सभी अधिकार सुरक्षित
+</footer>
+
+<script>
+  // Active nav link highlight on scroll
+  const sections = document.querySelectorAll('section');
+  const navLinks = document.querySelectorAll('nav a');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 80;
+      if(window.pageYOffset >= sectionTop) {
+        current = section.getAttribute('id');
+      }
+    });
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if(link.getAttribute('href') === '#' + current) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
